@@ -80,7 +80,7 @@ export default function Roadmap() {
   }, []);
 
   return (
-    <section className="py-10 bg-gradient-to-b from-white to-gray-50 overflow-x-hidden">
+    <section className="py-10 map-gradient overflow-x-hidden">
       <div className="max-w-5xl mx-auto px-4">
         <h2 className="text-3xl sm:text-4xl font-bold text-center mb-8 text-gray-900">
           Loyihaning Roadmapi

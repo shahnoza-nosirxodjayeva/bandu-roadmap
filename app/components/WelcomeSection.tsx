@@ -8,8 +8,8 @@ export default function WelcomeSection() {
       <div>
         <div className="flex items-center justify-center">
           <h1
-            className="text-[80px] tracking-wide mb-0 mr-6 leading-[1.3]"
-            style={{ fontFamily: "var(--font-roboto)" }}
+            className="text-[80px] font-bold tracking-wide mb-0 mr-6 leading-[1.3]"
+            style={{ fontFamily: "var(--font-inter)" }}
           >
           Banduga <span style={{ color: "#ffc400" }}>Hush</span> <br /> Kelibsiz
           </h1>

@@ -1,8 +1,13 @@
 @import "tailwindcss";
 
-/* @tailwind base;
-@tailwind components;
-@tailwind utilities; */
+:root {
+  --font-inter: 'Inter', sans-serif;
+}
+
+.font-inter {
+  font-family: var(--font-inter);
+}
+
 
 html, body, #__next {
   scroll-behavior: smooth;
@@ -17,6 +22,17 @@ html, body, #__next {
   background: #ffc400;
   background: linear-gradient(
     to top right,
+    rgba(255, 196, 0, 1) 0%,
+    rgba(245, 245, 245, 1) 30%,
+    rgba(245, 245, 245, 1) 72%,
+    rgba(40, 58, 29, 1) 100%
+  );
+}
+
+.map-gradient {
+  background: #ffc400;
+  background: linear-gradient(
+    to bottom right,
     rgba(255, 196, 0, 1) 0%,
     rgba(245, 245, 245, 1) 30%,
     rgba(245, 245, 245, 1) 72%,
