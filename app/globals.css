@@ -17,25 +17,34 @@ html, body, #__next {
   overflow-x: hidden;
 }
 
-/* Bandu gradient background */
 .bandu-gradient {
-  background: #ffc400;
-  background: linear-gradient(
-    to top right,
-    rgba(255, 196, 0, 1) 0%,
-    rgba(245, 245, 245, 1) 30%,
-    rgba(245, 245, 245, 1) 72%,
-    rgba(40, 58, 29, 1) 100%
-  );
+  position: relative;
+  background-color: #f5f5f5; /* oqish fon */
+  overflow: hidden;
 }
 
-.map-gradient {
-  background: #ffc400;
-  background: linear-gradient(
-    to bottom right,
-    rgba(255, 196, 0, 1) 0%,
-    rgba(245, 245, 245, 1) 30%,
-    rgba(245, 245, 245, 1) 72%,
-    rgba(40, 58, 29, 1) 100%
+.bandu-gradient::before {
+  content: "";
+  position: absolute;
+  top: -200px;      /* biroz yuqoriroqdan chiqadi */
+  left: -200px;     /* biroz chaproqda */
+  width: 600px;     /* kattalashgan nur diametri */
+  height: 600px;
+  background: radial-gradient(
+    circle,
+    rgba(255, 196, 0, 0.6) 0%,   /* markaz sariq */
+    rgba(255, 196, 0, 0.15) 40%, /* o‘tish biroz kuchliroq */
+    transparent 70%
   );
+  filter: blur(60px); /* yumshoqlikni oshirdik */
+  z-index: 0;
 }
+
+.bandu-gradient > * {
+  position: relative;
+  z-index: 1;
+}
+
+
+
+
